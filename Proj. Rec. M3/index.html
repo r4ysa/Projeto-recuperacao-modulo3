@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jota Fit</title>
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.png">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+
+    <!--BOOSTRAP-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+    <!--FIM DO BOOSTRAP-->
+
+    <!-- FONTES -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- FIM DAS FONTES -->
+
+</head>
+<body>
+
+  <!-- HEADER -->
+
+  <div id="header">
+
+    <div id="menu">
+      <a href="index.html"><img src="imagens/logo.png" alt="logo"></a>
+      <ul class="lista">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="onde-estamos.html">Onde estamos</a></li>
+        <li><a href="planos.html">Planos</a></li>
+        <li><a href="profissionais.html">Profissionais</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="img-header">
+      <img src="imagens/promo2.png" alt="img-promo">
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+
+  <!-- FIM DO MENU E HEADER -->
+
+  <!-- QUEM SOMOS -->
+
+  <div data-aos="fade-down" data-aos-duration="1500" class="container px-4 py-5" id="featured-3">
+    <div class="sobre-nos row">
+      <div class="col-md-6">
+        <img src="imagens/img-academia1.png" alt="img-academia" class="img-empresa">
+      </div>
+      <div class="col-md-5">
+        <h1>Quem somos</h1>
+        <p>Somos a melhor e mais completa academia do Brasil. Aqui você terá o melhor acompanhamento e desenvolvimento corporal.
+          A Jota Fit possui uma equipe formada por profissionais focados na sua saúde e bem-estar. Com este apoio você terá diversos benefícios para a sua saúde física e mental.</p>
+        <a href="#"><button class="botao-contato mt-1">Fale conosco</button></a>
+      </div>
+    </div>
+
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="imagens/target.png" alt="missao" class="icone">
+        </div>
+        <h3 class="titulo-sobre fs-2">Missão</h3>
+        <p>Proporcionar bem estar físico e mental aos nossos clientes e colaboradores. Transformar metas em realidade, criando hábitos saudáveis e proporcionando mais saúde e qualidade de vida às pessoas.</p>
+      </div>
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="imagens/visao.png" alt="visao" class="icone">
+        </div>
+        <h3 class="titulo-sobre fs-2">Visão</h3>
+        <p>Consolidar-se como um grupo forte no setor fitness, admirado pelo cliente e reconhecido amplamente pelo atendimento diferenciado,  ambiente agradável e por um relacionamento descontraído.
+        </p>
+      </div>
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="imagens/maos.png" alt="valores" class="icone">
+        </div>
+        <h3 class="titulo-sobre fs-2">Valores</h3>
+        <p>Dar suporte total com empenho e responsabilidade aos alunos. Excelência com simplicidade: Prestar atendimento personalizado, primando pelo ambiente descontraído, fazendo o cliente sentir-se em casa.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIM DO QUEM SOMOS -->
+
+  <!--CALCULADORA IMC-->
+
+  <div id="back">
+    <div class="calculadora row">
+      <div class="bloco-cal">
+        
+        <form id="formulario-imc">
+          <h1>Calculadora IMC</h1>
+          <fieldset>
+              <label for="peso">Peso:</label>
+              <input id="peso" name="peso" type="text" placeholder="Informe o peso"/>
+          
+              <label for="altura">Altura em centímetros:</label>
+              <input id="altura" name="altura" type="text" placeholder="Insira a altura" />
+
+              <br> 
+
+              <div id="resultado"></div>
+                  
+              <div class="btn-calcular"><a href="#"><input class="botao-calcular mt-1" id="bt-calcula" onclick="calculandoIMC()" value="Calcular"/></a></div>
+          </fieldset>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!--FIM CALCULADORA IMC-->
+
+  <br><br>
+
+  <!-- ACADEMIA -->
+
+  <div class="academia row">
+    <h1>Encontre a academia mais próxima de você!</h1>
+    <h3>Faça já sua matrícula</h3>
+    <br><br>
+    <img src="imagens/academia.png" alt="academia" class="img-academia">
+    <div class="btn-academia"><a href="onde-estamos.html"><button class="botao-academia mt-1">Buscar academias</button></a></div>
+  </div>
+
+  <!-- FIM ACADEMIA-->
+
+  <br><br>
+
+  <!-- RODAPÉ -->
+
+  <div data-aos="fade-up" data-aos-duration="1500" id="rodape">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Jota Fit</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="onde-estamos.html" class="nav-link p-0 text-muted">Onde estamos</a></li>
+              <li class="nav-item mb-2"><a href="planos.html" class="nav-link p-0 text-muted">Planos</a></li>
+              <li class="nav-item mb-2"><a href="profissionais.html" class="nav-link p-0 text-muted">Profissionais</a></li>
+              <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-muted">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Home</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quem somos</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Promoção</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Calculadora IMC</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Buscar academias</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Fale conosco</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Email e telefone</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Perguntas frequentes</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Quer receber novidades?</h5>
+              <p>Deixe o seu email abaixo e receba todos os nossos laçamentos!</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email:</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Informe seu Email" required>
+                <button class="botao-rodape" type="button">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2022 Jota Fit. Todos os direitos reservados.</p>
+          <ul class="icones-rodape list-unstyled d-flex">
+            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!--FIM RODAPÉ-->
+
+</body>
+</body>
+</html>

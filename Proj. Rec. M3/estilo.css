@@ -1,0 +1,730 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CSS - HEADER */
+
+#header{
+    background-position: bottom;
+    width: 100%;
+    height: 800px;
+    background-color: #081826;
+}
+
+
+#menu{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    justify-content: space-between;
+    width: 100%;
+    height: 85px;
+    transition: 250ms;
+}
+
+#menu img{
+    display:flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    align-self: center;
+    margin-left: 22px;
+    width: 45%;
+    margin-top: 13px;
+}
+
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#menu a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 600ms; 
+}
+
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#menu a:hover{
+    color: #F25C05;
+}
+
+.clear{
+    clear:both;
+}
+
+.img-header img{
+    width: 80%;
+    margin-left: 120px;
+    position: relative;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+
+@media (max-width: 740px){
+
+    #menu {
+        gap: 20px;
+        height: unset;
+    }
+
+    #menu img{
+        min-width: 120px;
+    }
+
+    #menu .lista{
+        flex-wrap: wrap;
+    }
+
+    #menu .lista li{
+        padding: 10px;
+    }
+}
+
+/* FIM CSS - HEADER */
+
+/* CSS - RODAPÉ */
+
+#rodape{
+    background-color: #081826;
+    color: white;
+}
+
+.visually-hidden{
+    margin-right: 20px;
+}
+
+.botao-rodape {
+    background: #F27405;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #8C2703;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 105px;
+    height: 40px;
+    transition: background 500ms, color 500ms;
+    margin-left: 20px;
+}
+
+.botao-rodape:hover{
+    background: transparent;
+    border: 2px solid #8C2703;
+    color: #8C2703;
+}
+
+.icones-rodape li{
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+/* FIM CSS RODAPÉ */    
+
+/* CSS - HOME SOBRE NÓS */
+
+.icone{
+    width: 30px;
+    background-color: #fff;
+}
+
+.img-empresa{
+    width: 110%;
+    margin-left: 0;
+}
+
+.sobre-nos{
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.sobre-nos h1{
+    color: #8C2703;
+    font-size: 2.6rem;
+    margin-top: 50px;
+}
+
+.sobre-nos p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.titulo-sobre{
+    color: #8C2703;
+}
+
+.botao-contato{
+    background:  #F27405;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #8C2703;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 50%;
+    height: 42px;
+    transition: background 500ms, color 500ms;
+}
+
+.botao-contato:hover{
+    background: transparent;
+    border: 2px solid #8C2703;
+    color: #8C2703;
+}
+
+/* FIM CSS - HOME SOBRE NÓS */
+
+/* CSS - CALCULADORA */
+
+#back{
+    background-image: url(imagens/fundo-imc.png);
+    background-position: bottom;
+    height: 600px;
+}
+
+#formulario-imc {
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#formulario-imc {
+    background-color: #364959;
+    width: 35%;
+    height: 100%;
+    align-items: center;
+    margin-left: 33%;
+}
+
+#formulario-imc input{
+    display: block;
+    border-radius: 15px;
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    margin-left: 17%;
+}
+
+#formulario-imc label{
+    color: #fff;
+    margin-left: 17%;
+}
+
+#formulário-imc{
+    display: inline-block;
+}
+
+.calculadora h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.calculadora img{
+    width: 100%;
+    height: 400px;
+}
+
+.botao-calcular{
+    background:  #F27405;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #8C2703;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 40%;
+    height: 42px;
+    transition: background 500ms, color 500ms;
+}
+
+.botao-calcular:hover{
+    background: transparent;
+    border: 2px solid #8C2703;
+    color: #8C2703;
+}
+
+.btn-calcular{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#resultado{
+    text-align: center;
+    color:#fff;
+}
+
+/* FIM CSS - HOME CALCULADORA */
+
+/* CSS - HOME ACADEMIA*/
+
+.academia img{
+    width: 80%;
+    margin-left: 120px;
+    position: relative;
+    border-radius: 30px;
+}
+
+.academia h1{
+    text-align: center;
+    color:#8C2703;
+}
+
+.academia h3{
+    text-align: center;
+    color: #364959;
+}
+
+.botao-academia{
+    background:  #F27405;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #8C2703;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 20%;
+    height: 42px;
+    transition: background 500ms, color 500ms;
+}
+
+.botao-academia:hover{
+    background: transparent;
+    border: 2px solid #8C2703;
+    color: #8C2703;
+}
+
+.btn-academia{
+    text-align: center;
+}
+
+/* FIM CSS - HOME ACADEMIA*/
+
+/* CSS PÁGINA DE PROFISSIONAIS */
+
+#equipe-titulo{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    width: 45%;
+    padding: 25px;
+    border-radius: 6px;
+    border-bottom: 5px solid #8C2703;
+}
+
+
+.nossa-equipe{
+    width: 100%;
+    background: url(imagens/academia-prof.jpg) fixed transparent;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    color: #EDF3F1;
+}
+
+.caixa-contato{
+    margin: 0 auto;
+    padding: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#caixa-pequena{
+    margin-bottom: 2em;
+    padding: 15px;
+    background: rgba(15, 14, 14, 0.5);
+    border-radius: 10px;
+}
+
+/* FIM CSS PÁGINA DE PROFISSIONAIS */
+
+/* CSS - PÁGINA DE CONTATO */ 
+
+#body-cadastro {
+    background-color: #081826;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+#formulario {
+    margin-top: 70px;
+    background-color: #ffffff5c;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#formulario .form-row {
+    color: #fff;
+}
+
+#confirmacaoDeEnvio{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#confirmacaoDeEnvio>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+a.botao-login{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.botao-login:hover{
+text-decoration: none;
+}
+
+input:valid{
+    border-color: #64ff6a;
+}
+
+.senhaInvalida input{
+    border-color: red;
+}
+
+.senhaInvalida:after{
+    content: "Por favor, digite a mesma senha em ambos os campos";
+    padding-left: 5px;
+    font-size: 10px;
+    color: lightcoral;
+}
+
+.frase-cadastro h2{
+    color: #F27405;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.botao-cadastrar{
+    background:  #F27405;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #8C2703;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 20%;
+    height: 42px;
+    transition: background 500ms, color 500ms;
+}
+
+.botao-cadastrar:hover{
+    background: transparent;
+    border: 2px solid #8C2703;
+    color: #8C2703;
+}
+
+/* FIM CSS - PÁGINA DE CONTATOS */
+
+/* CSS - PÁGINA DE PLANOS */
+
+.row .card{
+    background-color: #081826;
+    box-shadow: 2px 2px 10px #081826;
+    border: 2px solid #F27405;
+    border-radius: 15px;
+    color: #fff;
+    transition: 250ms;
+    padding-bottom: 10px;
+    width: 30%;
+}
+
+.row .card:hover{
+    box-shadow: 4px 4px 10px #F27405;
+    transform: translateY(-5px);
+}
+
+.alunos{
+    border: 2px solid #F27405;
+    width: 50%;
+}
+
+#feedbacks h3{
+    color: #F27405;
+}
+
+#feedbacks p{
+    font-size: 16px;
+}
+
+.table-responsive th{
+    color:#fff
+}
+
+.bi {
+    color: #fff;
+}
+
+/* FIM CSS - PÁGINA DE PLANOS */
+
+/* CSS - PÁGINA ONDE ESTAMOS */
+    
+.botao-matricula{
+    background:  #F27405;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #8C2703;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 40%;
+    height: 42px;
+    transition: background 500ms, color 500ms;
+}
+
+.botao-matricula:hover{
+    background: transparent;
+    border: 2px solid #8C2703;
+    color: #8C2703;
+}
+
+.btn-matricula{
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* FIM CSS - PÁGINA ONDE ESTAMOS */
+
+/*PAGINA CONTATOS*/
+
+:root{
+    --color-white: #fff;
+    --color-green: #36e650;
+    --color-dark1: #181818;
+    --color-red:red;
+    --color-purple1: #F27405;
+ 
+}
+
+#form{
+    margin-top: 20px;
+    overflow: auto;
+    background-color: #364959;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 200px;
+   
+ 
+}
+
+.content form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+}
+
+.span-required{
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: var(--color-red);
+    display: none;
+}
+
+#form .inputs{
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-purple1 ) ;
+    color: (--color-dark);
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+#form .inputs:focus{
+    border-color: greenyellow;
+}
+
+.box-select{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+#form button[type="submit"]{
+    background: linear-gradient(to bottom left, #081826 25%, #e18300);
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 105px;
+    height: 40px;
+    transition: background 500ms, color 500ms;
+    margin-left: 20px;
+}
+
+
+
+#form button[type="submit"]:hover{
+    background: transparent;
+    border: 2px solid #64ff6a;
+    color: #64ff6a;
+}
+
+@media screen and (max-width: 576px) {
+    .box-select{
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+#form .form-row{
+
+    color: #ffffff;
+}
+
+#confirmacaoDeEnvio{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#confirmacaoDeEnvio>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+   
+  
+
+}
+
+#confirmacaoDeEnvio>div p{
+   color: black;
+
+}
+a.botao-login{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.botao-login:hover{
+text-decoration: none;
+}
+
+/*input:valid{
+    border-color: #64ff6a;
+}
+
+input:invalid{
+    border-color: red;
+}*/
+
+.senhaInvalida input{
+    border-color: red;
+    
+
+}
+
+.senhaInvalida:after{
+content: "Por favor, digite a mesma senha em ambos os campos";
+padding-left: 5px;
+font-size: 10px;
+color: lightcoral;
+}
+
+.formrodape .span-requiredrodape{
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: red;
+    display: none;
+}
+
+.formrodape .inputs{
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid violet ;
+    color: black;
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.formrodape .inputs:focus{
+    border-color: greenyellow;
+}
